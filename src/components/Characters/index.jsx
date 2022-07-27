@@ -1,4 +1,5 @@
 import CharCard from "../CharCard";
+import "./styles.css";
 
 function Characters({ characterList }) {
   const liList = characterList.map((character) => (
@@ -6,10 +7,14 @@ function Characters({ characterList }) {
   ));
 
   return (
-    <>
-      <h1>Meus personagens</h1>
-      <ul>{liList}</ul>
-    </>
+    <div className="container">
+      <header>
+        <h1>Meus personagens</h1>
+      </header>
+      <main>
+        <ul>{liList}</ul>
+      </main>
+    </div>
   );
 }
 

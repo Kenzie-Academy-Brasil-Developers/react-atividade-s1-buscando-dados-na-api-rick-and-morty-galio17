@@ -11,7 +11,11 @@ function App() {
       .catch((error) => console.log(error));
   }, []);
 
-  return <Characters characterList={characterList} />;
+  return (
+    <div>
+      <Characters characterList={characterList} />
+    </div>
+  );
 }
 
 export default App;
